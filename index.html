@@ -3,210 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Find Your Perfect Treat</title>
+  <title>Real Estate Price Tracker – Chennai & Bangalore</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="app">
-    <div class="panel panel-cup">
-      <header class="panel-header">
-        <h2 class="panel-title">Today's cup</h2>
-      </header>
-      <div class="panel-body">
-        <!-- Landing -->
-        <section class="step active" data-step="0" id="landing">
-          <h1 class="headline">Here's what we've brewed for you.</h1>
-          <p class="intro">Answer a few delightfully unserious questions and we'll conjure a drink (or treat) that matches your energy, time of day, and flavor mood.</p>
-          <div class="step-dots" aria-hidden="true">
-            <span class="step-dot" data-step-dot="1">Pick</span>
-            <span class="step-dot" data-step-dot="2">Mood</span>
-            <span class="step-dot" data-step-dot="3">Flavor</span>
-            <span class="step-dot" data-step-dot="4">Time</span>
-            <span class="step-dot" data-step-dot="5">Style</span>
-          </div>
-          <button type="button" class="btn btn-primary" id="start-quiz">Find my match</button>
-        </section>
+    <header class="hero">
+      <h1>Real Estate Price Tracker</h1>
+      <p class="tagline">Chennai & Bangalore – find areas that fit your budget</p>
+    </header>
 
-        <!-- Question 0: Category -->
-        <section class="step" data-step="1" id="question-category">
-          <div class="step-dots" aria-hidden="true">
-            <span class="step-dot active" data-step-dot="1">Pick</span>
-            <span class="step-dot" data-step-dot="2">Mood</span>
-            <span class="step-dot" data-step-dot="3">Flavor</span>
-            <span class="step-dot" data-step-dot="4">Time</span>
-            <span class="step-dot" data-step-dot="5">Style</span>
-          </div>
-          <p class="progress" aria-live="polite">Question 1 of 5</p>
-          <h2 class="question-title">What are you in the mood for?</h2>
-          <div class="options options-category" role="group" aria-labelledby="q0-label">
-            <span id="q0-label" class="sr-only">Choose one option</span>
-            <button type="button" class="option option-card" data-question="0" data-value="coffee">
-              <span class="option-icon" aria-hidden="true">☕</span>
-              <span class="option-label">Coffee</span>
-            </button>
-            <button type="button" class="option option-card" data-question="0" data-value="icecream">
-              <span class="option-icon" aria-hidden="true">🍦</span>
-              <span class="option-label">Ice cream</span>
-            </button>
-            <button type="button" class="option option-card" data-question="0" data-value="dessert">
-              <span class="option-icon" aria-hidden="true">🍰</span>
-              <span class="option-label">Dessert</span>
-            </button>
-          </div>
-          <div class="nav-buttons">
-            <button type="button" class="btn btn-secondary" id="back-1" disabled>Back</button>
-            <button type="button" class="btn btn-primary" id="next-1" disabled>Next</button>
-          </div>
-        </section>
-
-        <!-- Question 1: Mood -->
-        <section class="step" data-step="2" id="question-1">
-          <div class="step-dots" aria-hidden="true">
-            <span class="step-dot done" data-step-dot="1">Pick</span>
-            <span class="step-dot active" data-step-dot="2">Mood</span>
-            <span class="step-dot" data-step-dot="3">Flavor</span>
-            <span class="step-dot" data-step-dot="4">Time</span>
-            <span class="step-dot" data-step-dot="5">Style</span>
-          </div>
-          <p class="progress" aria-live="polite">Question 2 of 5</p>
-          <h2 class="question-title">What's your mood right now?</h2>
-          <div class="options" role="group" aria-labelledby="q1-label">
-            <span id="q1-label" class="sr-only">Choose one option</span>
-            <button type="button" class="option" data-question="1" data-value="chill">Chill</button>
-            <button type="button" class="option" data-question="1" data-value="focus">Need focus</button>
-            <button type="button" class="option" data-question="1" data-value="treat">Treat myself</button>
-            <button type="button" class="option" data-question="1" data-value="adventurous">Adventurous</button>
-          </div>
-          <div class="nav-buttons">
-            <button type="button" class="btn btn-secondary" id="back-2">Back</button>
-            <button type="button" class="btn btn-primary" id="next-2" disabled>Next</button>
-          </div>
-        </section>
-
-        <!-- Question 2: Sweet or bold -->
-        <section class="step" data-step="3" id="question-2">
-          <div class="step-dots" aria-hidden="true">
-            <span class="step-dot done" data-step-dot="1">Pick</span>
-            <span class="step-dot done" data-step-dot="2">Mood</span>
-            <span class="step-dot active" data-step-dot="3">Flavor</span>
-            <span class="step-dot" data-step-dot="4">Time</span>
-            <span class="step-dot" data-step-dot="5">Style</span>
-          </div>
-          <p class="progress" aria-live="polite">Question 3 of 5</p>
-          <h2 class="question-title">Sweet or bold?</h2>
-          <div class="options" role="group" aria-labelledby="q2-label">
-            <span id="q2-label" class="sr-only">Choose one option</span>
-            <button type="button" class="option" data-question="2" data-value="sweet">Sweet</button>
-            <button type="button" class="option" data-question="2" data-value="bold">Bold</button>
-            <button type="button" class="option" data-question="2" data-value="balanced">Balanced</button>
-            <button type="button" class="option" data-question="2" data-value="unsure">Not sure</button>
-          </div>
-          <div class="nav-buttons">
-            <button type="button" class="btn btn-secondary" id="back-3">Back</button>
-            <button type="button" class="btn btn-primary" id="next-3" disabled>Next</button>
-          </div>
-        </section>
-
-        <!-- Question 3: Time of day -->
-        <section class="step" data-step="4" id="question-3">
-          <div class="step-dots" aria-hidden="true">
-            <span class="step-dot done" data-step-dot="1">Pick</span>
-            <span class="step-dot done" data-step-dot="2">Mood</span>
-            <span class="step-dot done" data-step-dot="3">Flavor</span>
-            <span class="step-dot active" data-step-dot="4">Time</span>
-            <span class="step-dot" data-step-dot="5">Style</span>
-          </div>
-          <p class="progress" aria-live="polite">Question 4 of 5</p>
-          <h2 class="question-title">What time is it?</h2>
-          <div class="options" role="group" aria-labelledby="q3-label">
-            <span id="q3-label" class="sr-only">Choose one option</span>
-            <button type="button" class="option" data-question="3" data-value="morning">Morning</button>
-            <button type="button" class="option" data-question="3" data-value="afternoon">Afternoon</button>
-            <button type="button" class="option" data-question="3" data-value="evening">Evening</button>
-          </div>
-          <div class="nav-buttons">
-            <button type="button" class="btn btn-secondary" id="back-4">Back</button>
-            <button type="button" class="btn btn-primary" id="next-4" disabled>Next</button>
-          </div>
-        </section>
-
-        <!-- Question 4: Milk / style -->
-        <section class="step" data-step="5" id="question-4">
-          <div class="step-dots" aria-hidden="true">
-            <span class="step-dot done" data-step-dot="1">Pick</span>
-            <span class="step-dot done" data-step-dot="2">Mood</span>
-            <span class="step-dot done" data-step-dot="3">Flavor</span>
-            <span class="step-dot done" data-step-dot="4">Time</span>
-            <span class="step-dot active" data-step-dot="5">Style</span>
-          </div>
-          <p class="progress" aria-live="polite">Question 5 of 5</p>
-          <h2 class="question-title" id="question-4-title">Milk or no milk?</h2>
-          <div class="options" role="group" aria-labelledby="q4-label">
-            <span id="q4-label" class="sr-only">Choose one option</span>
-            <button type="button" class="option" data-question="4" data-value="creamy">Yes, creamy</button>
-            <button type="button" class="option" data-question="4" data-value="alittle">A little</button>
-            <button type="button" class="option" data-question="4" data-value="nomilk">No milk</button>
-            <button type="button" class="option" data-question="4" data-value="dontcare">Don't care</button>
-          </div>
-          <div class="nav-buttons">
-            <button type="button" class="btn btn-secondary" id="back-5">Back</button>
-            <button type="button" class="btn btn-primary" id="next-5" disabled>Next</button>
-          </div>
-        </section>
-
-        <!-- Result -->
-        <section class="step" data-step="6" id="result">
-          <div class="result-content" id="result-content">
-            <div class="result-badge">
-              <span class="result-badge-dot"></span>
-              <span id="result-badge-label">Today's cup</span>
-            </div>
-            <p class="result-tagline" id="result-tagline"></p>
-            <h1 class="result-name" id="result-title"></h1>
-            <p class="result-description" id="result-description"></p>
-            <div class="result-tags" id="result-tags"></div>
-            <div class="result-why">
-              <h3 class="result-section-title">Why this?</h3>
-              <p class="result-why-text" id="result-why"></p>
-            </div>
-            <div class="result-make">
-              <h3 class="result-section-title">A quick way to make it</h3>
-              <p class="result-make-text" id="result-make"></p>
-            </div>
-          </div>
-          <div class="result-actions">
-            <button type="button" class="btn btn-primary" id="retake">Brew another cup</button>
-            <button type="button" class="btn btn-secondary" id="tweak">Tweak my mood</button>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <div class="panel panel-reading">
-      <header class="panel-header">
-        <h2 class="panel-title">Live beans reading</h2>
-      </header>
-      <div class="panel-body">
-        <p class="reading-intro">As you answer, we quietly sketch a profile: how bold, how sweet, how wired. Think of it as your coffee horoscope.</p>
-        <div class="reading-pills" id="reading-pills">
-          <span class="pill" id="pill-category">Mood energy —</span>
-          <span class="pill" id="pill-mood">Time window —</span>
-          <span class="pill" id="pill-time">Sweetness —</span>
-          <span class="pill" id="pill-style">Temperature —</span>
-          <span class="pill" id="pill-milk">Milk —</span>
-        </div>
-        <div class="visualizer" id="visualizer" aria-hidden="true">
-          <div class="visualizer-rings">
-            <span class="ring ring-1"></span>
-            <span class="ring ring-2"></span>
-            <span class="ring ring-3"></span>
-          </div>
-          <div class="visualizer-dot" id="visualizer-dot"></div>
+    <section class="filters">
+      <div class="filter-group">
+        <span class="filter-label">City</span>
+        <div class="city-tabs">
+          <button type="button" class="tab active" data-city="">All</button>
+          <button type="button" class="tab" data-city="chennai">Chennai</button>
+          <button type="button" class="tab" data-city="bangalore">Bangalore</button>
         </div>
       </div>
-    </div>
+      <div class="filter-group">
+        <span class="filter-label">Budget (Lakhs)</span>
+        <div class="budget-inputs">
+          <input type="number" id="budget-min" placeholder="Min" min="0" step="10" aria-label="Minimum budget in lakhs">
+          <span class="range-sep">–</span>
+          <input type="number" id="budget-max" placeholder="Max" min="0" step="10" aria-label="Maximum budget in lakhs">
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="section best-investment">
+        <h2>Best Investment options</h2>
+        <p class="section-hint">Areas with value below city average (top 12)</p>
+        <div id="best-cards" class="cards"></div>
+      </section>
+
+      <section class="section all-areas">
+        <h2>All areas</h2>
+        <div id="areas-wrap">
+          <table class="areas-table" aria-label="All areas with price details">
+            <thead>
+              <tr>
+                <th>Locality</th>
+                <th>City</th>
+                <th>₹/sq ft</th>
+                <th>Price range (Lakhs)</th>
+                <th>Value</th>
+              </tr>
+            </thead>
+            <tbody id="areas-tbody"></tbody>
+          </table>
+          <div class="pagination" id="pagination"></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="loading" class="loading" hidden>Loading…</div>
+    <div id="error" class="error" hidden></div>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>

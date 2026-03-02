@@ -1,0 +1,22 @@
+[
+  { "city": "Chennai", "locality": "Adyar", "pricePerSqFt": 8500, "totalPriceMin": 85, "totalPriceMax": 220, "belowCityAvg": true },
+  { "city": "Chennai", "locality": "Anna Nagar", "pricePerSqFt": 9200, "totalPriceMin": 92, "totalPriceMax": 250, "belowCityAvg": false },
+  { "city": "Chennai", "locality": "T Nagar", "pricePerSqFt": 12000, "totalPriceMin": 120, "totalPriceMax": 350, "belowCityAvg": false },
+  { "city": "Chennai", "locality": "OMR", "pricePerSqFt": 6500, "totalPriceMin": 45, "totalPriceMax": 180, "belowCityAvg": true },
+  { "city": "Chennai", "locality": "Velachery", "pricePerSqFt": 7800, "totalPriceMin": 55, "totalPriceMax": 160, "belowCityAvg": true },
+  { "city": "Chennai", "locality": "Porur", "pricePerSqFt": 6200, "totalPriceMin": 42, "totalPriceMax": 130, "belowCityAvg": true },
+  { "city": "Chennai", "locality": "Chrompet", "pricePerSqFt": 5800, "totalPriceMin": 38, "totalPriceMax": 95, "belowCityAvg": true },
+  { "city": "Chennai", "locality": "Tambaram", "pricePerSqFt": 5500, "totalPriceMin": 35, "totalPriceMax": 90, "belowCityAvg": true },
+  { "city": "Chennai", "locality": "Guindy", "pricePerSqFt": 9500, "totalPriceMin": 75, "totalPriceMax": 200, "belowCityAvg": false },
+  { "city": "Chennai", "locality": "Nungambakkam", "pricePerSqFt": 11000, "totalPriceMin": 100, "totalPriceMax": 280, "belowCityAvg": false },
+  { "city": "Bangalore", "locality": "Koramangala", "pricePerSqFt": 11500, "totalPriceMin": 95, "totalPriceMax": 280, "belowCityAvg": false },
+  { "city": "Bangalore", "locality": "Indiranagar", "pricePerSqFt": 12500, "totalPriceMin": 110, "totalPriceMax": 320, "belowCityAvg": false },
+  { "city": "Bangalore", "locality": "HSR Layout", "pricePerSqFt": 9800, "totalPriceMin": 65, "totalPriceMax": 220, "belowCityAvg": true },
+  { "city": "Bangalore", "locality": "Whitefield", "pricePerSqFt": 8200, "totalPriceMin": 55, "totalPriceMax": 190, "belowCityAvg": true },
+  { "city": "Bangalore", "locality": "Electronic City", "pricePerSqFt": 6500, "totalPriceMin": 42, "totalPriceMax": 120, "belowCityAvg": true },
+  { "city": "Bangalore", "locality": "Sarjapur Road", "pricePerSqFt": 8800, "totalPriceMin": 58, "totalPriceMax": 200, "belowCityAvg": true },
+  { "city": "Bangalore", "locality": "Jayanagar", "pricePerSqFt": 10500, "totalPriceMin": 85, "totalPriceMax": 250, "belowCityAvg": false },
+  { "city": "Bangalore", "locality": "Marathahalli", "pricePerSqFt": 7500, "totalPriceMin": 48, "totalPriceMax": 150, "belowCityAvg": true },
+  { "city": "Bangalore", "locality": "Bellandur", "pricePerSqFt": 9200, "totalPriceMin": 62, "totalPriceMax": 210, "belowCityAvg": true },
+  { "city": "Bangalore", "locality": "Bannerghatta Road", "pricePerSqFt": 7200, "totalPriceMin": 45, "totalPriceMax": 140, "belowCityAvg": true }
+]
