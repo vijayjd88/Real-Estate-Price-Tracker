@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const ROOT = path.join(__dirname, '..');
+const ROOT = process.env.VERCEL ? process.cwd() : path.join(__dirname, '..');
 const DATA_DIR = path.join(ROOT, 'data');
 const AREAS_FILE = path.join(DATA_DIR, 'areas.json');
 
