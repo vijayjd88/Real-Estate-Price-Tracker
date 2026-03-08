@@ -35,7 +35,7 @@ app.use(express.static(ROOT));
 // Ensure root always serves index.html (fixes 404 on some Vercel setups)
 app.get('/', (req, res) => {
   const indexPath = path.join(ROOT, 'index.html');
-  if (require('fs').existsSync(indexPath)) {
+  if (fs.existsSync(indexPath)) {
     res.sendFile(indexPath);
   } else {
     res.status(404).send('Not found');
