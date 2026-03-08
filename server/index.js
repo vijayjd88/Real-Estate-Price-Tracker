@@ -32,6 +32,16 @@ app.get('/api/areas', (req, res) => {
 
 app.use(express.static(ROOT));
 
+// Ensure root always serves index.html (fixes 404 on some Vercel setups)
+app.get('/', (req, res) => {
+  const indexPath = path.join(ROOT, 'index.html');
+  if (require('fs').existsSync(indexPath)) {
+    res.sendFile(indexPath);
+  } else {
+    res.status(404).send('Not found');
+  }
+});
+
 if (!process.env.VERCEL) {
   const PORT = process.env.PORT || 3000;
   app.listen(PORT, () => console.log(`Server on http://localhost:${PORT}`));
